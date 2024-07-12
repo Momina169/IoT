@@ -1,0 +1,74 @@
+.iot__blog{
+    display: flex;
+    flex-direction: column;
+}
+.iot__blog-heading{
+    width: 100%;
+    text-align: left;
+
+    margin-bottom: 5rem;
+}
+.iot__blog-heading h1 {
+    font-size: 36px;
+    line-height: 48px;
+    font-family: var(--font-family);
+    font-weight: 800;
+}
+.iot__blog-container{
+    display: flex;
+    flex-direction: row;
+}
+.iot__blog-container-groupA{
+    flex:0.75;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+.iot__blog-container-groupB{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+@media screen and (max-width: 990px) {
+    .iot__blog-container {
+        flex-direction: column-reverse;
+    }
+
+
+    .iot__blog-container-groupA {
+        margin: 2rem 0 ;
+    }
+
+    .iot__blog-container-groupA .iot__blog-container_article  {
+       width: 48%;
+    }
+
+    .iot__blog-container-groupA .iot__blog-container_article-image {
+        height: 250px;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .iot__blog-container-groupB {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .iot__blog-container_groupA .iot__blog-container_article  {
+       width: 100%;
+      
+    }
+
+    .iot__blog-heading h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .iot__blog-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+}

@@ -1,0 +1,57 @@
+.iot__features{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.iot__features-heading{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+.iot__features-heading h1{
+    font-family: var(--font-family);
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 800;
+}
+.iot__features-heading p{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 2rem;
+    color: var(--color-text);
+}
+.iot__features-container{
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+@media screen and (max-width:990px) {
+    .iot__features{
+        flex-direction: column;
+    }
+    .iot__features-heading p{
+        margin-bottom: 2rem;
+    }
+    .iot__features-heading{
+        margin: 0 0 2rem 0;
+    }
+}
+@media screen and(max-width:550px){
+    .iot__features-heading h1{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .iot__features-heading p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

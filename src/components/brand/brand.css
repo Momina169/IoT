@@ -1,0 +1,16 @@
+.iot__brand{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.iot__brand div img{
+    flex: 1;
+    margin: 1rem;
+    min-width: 90px;
+    max-width: 120px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
